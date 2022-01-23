@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Libre+Franklin:wght@400;600&family=Montserrat:wght@200;400;700&family=Poppins&family=Rubik:wght@500&family=Secular+One&family=Space+Mono:wght@400;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Libre Franklin", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0 70px;
+	overflow: hidden;
+}
+
+p {
+	color: white;
+	font-weight: 700;
+	padding: 20px;
+	font-size: 1.5rem;
+	opacity: 0;
+	transition: 0.7s ease-in;
+}
+.main-container {
+	display: flex;
+	width: 90vw;
+}
+.card {
+	position: relative;
+	height: 80vh;
+	width: 100vw;
+	margin: 0 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	justify-content: start;
+	align-items: flex-end;
+	flex: 0.5;
+	transition: 0.7s ease-in;
+}
+.active {
+	flex: 5;
+}
+.active > p {
+	opacity: 100%;
+}
